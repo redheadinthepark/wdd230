@@ -6,7 +6,7 @@ body {
   }
   
   header {
-    background: lightpink;
+    background: pink;
     padding: 2rem;
     grid-column: 1 / 3;
   }
