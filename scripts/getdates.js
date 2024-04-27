@@ -5,4 +5,4 @@ footerFirstParagraph.textContent = `©${currentYear} Leah Adair United States of
 
 const lastModified = document.lastModified;
 const footerSecondParagraph = document.querySelector('footer p:last-of-type');
-footerSecondParagraph.textContent = `lastModified ${lastModified}`;
+footerSecondParagraph.textContent = `Last modified ${lastModified}`;
