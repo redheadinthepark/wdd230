@@ -39,6 +39,7 @@ header img {
     max-width: 100%;
     height: auto;
     width: 150px;
+    border-radius: 5%;
     margin-right: 20px; 
     margin-left: -170px; 
 }
@@ -62,6 +63,16 @@ nav a {
     text-align: center;
     padding: 1rem;
     text-decoration: none;
+    position: relative;
+}
+
+nav a.wayfinding::before {
+    content: " →";
+    color: #954f16;
+    position: absolute;
+    top: 50%;
+    right: -30px;
+    transform: translateY(-50%);
 }
 
 nav a:hover {
