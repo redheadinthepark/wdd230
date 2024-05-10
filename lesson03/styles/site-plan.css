@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Yeseva+One&display=swap');
+
+:root {
+    --primary-color: #19304D;
+    --secondary-color: #75434D;
+    --accent1-color: #FBF5EF;
+    --accent2-color: #CC8D80;
+  
+    --heading-font: "Yeseva One";
+    --paragraph-font: Josefin Sans;
+  
+
+    --headline-color-on-white: #75434D;  /* headlines on a white background */ 
+    --headline-color-on-color: #75434D; /* headlines on a colored background */ 
+    --paragraph-color-on-white: #19304D; /* paragraph text on a white background */ 
+    --paragraph-color-on-color: #19304D; /* paragraph text on a colored background */ 
+    --paragraph-background-color:#FBF5EF;
+    /*--nav-link-color: #000000;
+    --nav-background-color: #f7cdd0;
+    --nav-hover-link-color: #587d71;
+    --nav-hover-background-color: #f9eccc;*/
+  }
