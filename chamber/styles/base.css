@@ -1,6 +1,4 @@
 .card {
-    display: flex;
-    flex-direction: column;
     width: 300px;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -15,4 +13,19 @@
 
 .card p {
     margin-bottom: 0;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.two-thirds {
+    width: calc(66.67% - 20px);
+}
+
+.company-cards {
+    display: flex;
+    justify-content: space-between;
 }
