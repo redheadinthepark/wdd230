@@ -8,11 +8,11 @@
 }
 
 header {
-    max-width: auto;
+    max-width: 100%;
 }
 
 header img {
-    max-width: auto;
+    max-width: 100%;
     height: auto;
     width: 80px;
     border-radius: 10%;
