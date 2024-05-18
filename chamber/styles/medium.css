@@ -1,11 +1,31 @@
 @media screen and (max-width: 480px) {
+.navigation {
+    display : none;
+}
+
+.navigation.open {
+    display: block;
+}
+
+header {
+    max-width: auto;
+}
+
+header img {
+    max-width: auto;
+    height: auto;
+    width: 80px;
+    border-radius: 10%;
+    margin-right: 10px; 
+    margin-left: 5px; 
+}
 
 #menu {
     display : block;
-    background-color : white;
+    background-color : #fbf5ef;
     border : none;
     font-size : 1.5rem;
-    padding : 7.5px 0 0 355px;
+    padding : 7.5px 0 0 300px;
 }
 
 #menu::before {
@@ -15,4 +35,13 @@
 #menu.open::before {
     content : "✖️";
 }
+
+.container {
+    grid-template-columns: 1fr;
+}
+
+.current-events {
+    grid-column: span 1;
+}
+
 }
