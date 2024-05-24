@@ -1,18 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Yeseva+One&display=swap');
 
 body {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     background-color: #fbf5ef;
 }
 
 header {
     display: flex;
     align-items: center;
-    justify-content: center; 
-    color:#fbf5ef;
+    justify-content: center;
+    color: #fbf5ef;
     background-color: #19304d;
-    padding: 20px 20px; 
+    padding: 20px;
     max-width: 100%;
     margin: 0 auto;
 }
@@ -22,8 +22,7 @@ header img {
     height: auto;
     width: 150px;
     border-radius: 10%;
-    margin-right: 20px; 
-    margin-left: -170px; 
+    margin-right: 20px;
 }
 
 nav {
@@ -42,7 +41,7 @@ nav {
     list-style-type: none;
     padding: 0;
 }
-  
+
 .navigation ul li {
     margin-right: 10px;
 }
@@ -51,7 +50,7 @@ nav a {
     display: block;
     color: #fbf5ef;
     text-align: center;
-    padding: .0rem;
+    padding: 0.5rem;
     text-decoration: none;
     position: relative;
 }
@@ -59,7 +58,6 @@ nav a {
 #menu {
     display: none;
 }
-
 
 h1 {
     font-family: "Yeseva One";
@@ -77,6 +75,7 @@ p {
 }
 
 .hero {
+    position: relative;
     width: 100%;
     overflow: hidden;
 }
@@ -88,6 +87,10 @@ p {
 }
 
 .button {
+    position: absolute;
+    top: 50%; 
+    left: 30px; 
+    transform: translateY(-50%); 
     gap: 20px;
     border: 1px solid #19304d;
     border-radius: 10px;
@@ -113,7 +116,7 @@ p {
 }
 
 .current-events {
-    grid-column: span 2; 
+    grid-column: span 2;
 }
 
 .footer {
@@ -123,6 +126,6 @@ p {
 }
 
 .footer p {
-    color:#fbf5ef;
+    color: #fbf5ef;
     margin: 5px 0;
 }
