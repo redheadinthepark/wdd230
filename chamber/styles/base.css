@@ -9,12 +9,12 @@ body {
 header {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between; 
     color: #fbf5ef;
     background-color: #19304d;
     padding: 20px;
-    max-width: 100%;
-    margin: 0 auto;
+    width: 100%;
+    box-sizing: border-box; 
 }
 
 header img {
@@ -31,15 +31,16 @@ nav {
     padding: 10px 20px;
     line-height: 2;
     max-width: 100%;
-    margin: 0 auto;
+    box-sizing: border-box;
 }
 
 .navigation ul {
     display: grid;
-    grid-template-columns: repeat(4, auto);
+    grid-template-columns: repeat(4, 1fr);
     gap: 10px;
     list-style-type: none;
     padding: 0;
+    margin: 0;
 }
 
 .navigation ul li {
@@ -49,6 +50,8 @@ nav {
 nav a {
     display: block;
     color: #fbf5ef;
+    font-family: "Josefin Sans";
+    font-size: 20px;
     text-align: center;
     padding: 0.5rem;
     text-decoration: none;
@@ -123,6 +126,8 @@ p {
     background-color: #19304d;
     text-align: center;
     padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .footer p {

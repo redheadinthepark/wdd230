@@ -8,16 +8,16 @@
     }
 
     header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         max-width: 100%;
     }
 
     header img {
-        max-width: 100%;
-        height: auto;
         width: 80px;
-        border-radius: 10%;
-        margin-right: 10px; 
-        margin-left: 5px; 
+        margin-right: 10px;
+        margin-left: 5px;
     }
 
     #menu {
@@ -25,7 +25,7 @@
         background-color: #fbf5ef;
         border: none;
         font-size: 1.5rem;
-        padding: 7.5px 0 0 300px;
+        padding: 5px 0 5px 90%;
     }
 
     #menu::before {
@@ -44,12 +44,7 @@
         grid-column: span 1;
     }
 
-    .hero {
-        position: relative;
-    }
-
     .button {
-        position: absolute;
         top: 50%;
         left: 20px;
         transform: translateY(-50%);
