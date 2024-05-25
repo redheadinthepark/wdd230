@@ -58,20 +58,15 @@ header img {
     background-color: #1a1a1a; 
     color: #fbf5ef;
     font-size: 1.5rem;
-    padding: 5px 0 5px 90%;
+    padding: 5px 0;
+    padding-left: 90%;
 }
 
 #menu::before.dark-mode {
     color: #fbf5ef;
-    background-color: #1a1a1a;
 }
 
 #menu.open::before.dark-mode {
     color: #fbf5ef;
-    background-color: #1a1a1a;
-}
-
-.menuButton.dark-mode {
-    background-color: #1a1a1a;
 }
 }
