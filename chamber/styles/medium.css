@@ -30,6 +30,7 @@ header img {
 
 #menu::before {
     content: "☰";
+    color: #19304d;
 }
             
 #menu.open::before {
@@ -62,6 +63,7 @@ header img {
 
 #menu::before.dark-mode {
     color: #fbf5ef;
+    background-color: #1a1a1a;
 }
 
 #menu.open::before.dark-mode {
@@ -69,5 +71,7 @@ header img {
     background-color: #1a1a1a;
 }
 
-
+.menuButton.dark-mode {
+    background-color: #1a1a1a;
+}
 }
