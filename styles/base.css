@@ -95,7 +95,6 @@ nav a:hover {
     bottom: 30px;
     right: 50px;
     background: linear-gradient(to right, #EADBC8, #DAC0A3);    
-    border: 1 px solid rgba (0,0,0, 0.75);
     padding: 1.5rem;
     box-shadow: 0 0 3rem #EADBC8;
     opacity: .75
