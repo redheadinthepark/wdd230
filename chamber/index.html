@@ -36,7 +36,12 @@
     </nav>
     <main>
         <div class="hero">
-            <img src="images/chamber-hero-image-min.png" alt="Arizona skyscrapers and city at golden hour.">
+            <picture>
+                <source srcset="images/chamber-hero-image-small.webp" media="(max-width: 400px)">
+                <source srcset="images/chamber-hero-image-medium.webp" media="(min-width: 401px) and (max-width: 800px)">
+                <source srcset="images/chamber-hero-image-large.webp" media="(min-width: 801px)">
+            <img src="images/chamber-hero-image-large.webp" alt="Arizona skyscrapers and city at golden hour.">
+            </picture>
         </div>
         <button class="button">Join the Chamber!</button>
         <div class="container">
