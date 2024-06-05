@@ -3,21 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Lazy Load Activity</title>
+    <meta name="description" content="Example of lazy load">
+    <meta name="author" content="Leah Adair">
+    <link rel="stylesheet" href="styles/lazyload.css">
 </head>
 <body>
     <header>
-        <h1>Lazy Load Example Page</h1>
-
+        <h1>Lazy Load Demonstration</h1>
     </header>
     <main>
-        <img src="" loading="" alt="" width="" heght=""
+       <picture>
+        <img src="https://placebear.com/400/600" alt="Placeholder Bear Image" loading="lazy" width="400" height="600">
+       </picture>
+       <picture><img src="https://placebear.com/400/700" alt="Placeholder Bear Image" loading="lazy" width="400" height="600"></picture>
+       <picture><img src="https://placebear.com/400/800" alt="Placeholder Bear Image" loading="lazy" width="400" height="600"></picture>
+       <picture><img src="https://placebear.com/400/650" alt="Placeholder Bear Image" loading="lazy" width="400" height="600"></picture>
+       <picture><img src="https://placebear.com/400/750" alt="Placeholder Bear Image" loading="lazy" width="400" height="600"></picture>
+       <picture><img src="https://placebear.com/400/850" alt="Placeholder Bear Image" loading="lazy" width="400" height="600"></picture> 
 
     </main>
     <footer>
         <p>©2024<br>Leah Adair<br>United States of America
         </p>
         <p>Last modified date and time</p>
-    </footer>    
+    </footer>  
+    
+    <script src="scripts/lazyload.js"></script>
+
 </body>
 </html>
