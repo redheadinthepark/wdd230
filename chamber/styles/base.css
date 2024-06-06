@@ -62,7 +62,7 @@ header img {
     -webkit-transition: .4s;
     transition: .4s;
 }
-  input:checked + .slider {
+input:checked + .slider {
     background-color: #75434d;
 }
   
@@ -227,3 +227,33 @@ body.dark-mode h1,
 body.dark-mode h2 {
     color: #fbf5ef;
 }
+
+/* Discover Page */
+
+/* CSS for sidebar and main content layout */
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 2fr; /* Sidebar takes 1 part, main content takes 2 parts */
+    gap: 20px;
+    padding: 20px;
+}
+
+.sidebar {
+    grid-column: 1 / 2; /* Sidebar spans from column 1 to column 2 */
+}
+
+.main-content {
+    grid-column: 2 / 3; /* Main content spans from column 2 to column 3 */
+    display: grid;
+    gap: 20px;
+}
+
+.main-content img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
