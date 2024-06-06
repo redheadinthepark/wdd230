@@ -97,7 +97,7 @@ nav a:hover {
     background: linear-gradient (to right, #EADBC8, #DAC0A3);    
     padding: 1.5rem;
     box-shadow: 0 0 3rem #EADBC8;
-    opacity: .75
+    opacity: .75;
 }
 
 .herolabel p {
