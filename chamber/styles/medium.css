@@ -69,4 +69,33 @@ header img {
 #menu.open::before.dark-mode {
     color: #fbf5ef;
 }
+
+.wrapper {
+    grid-template-columns: 1fr;
+    padding: 10px;
+}
+
+.sidebar {
+    grid-column: 1 / 2;
+}
+
+.main-content {
+    grid-column: 1 / 2;
+}
+
+.main-content {
+    display: block;
+}
+
+.card {
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.main-content img {
+    margin-bottom: 10px;
+}
+
+
+
 }
