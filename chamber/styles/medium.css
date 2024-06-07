@@ -94,8 +94,9 @@ header img {
 
 .main-content img {
     margin-bottom: 10px;
+    box-shadow: none;
+    transition: none;
 }
-
 
 
 }

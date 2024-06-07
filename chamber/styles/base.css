@@ -284,10 +284,28 @@ body.dark-mode h2 {
     display: block;
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.main-content img:hover {
+    box-shadow: 0 0 24px rgba(0, 0, 0, 0.5);
+}
+
+picture {
+    position: relative;
+    display: inline-block;
 }
 
 figcaption {
     font-family: "Josefin Sans";
     color: #19304d;
-    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+    padding: 5px 0;
+}
+
+.visit-message {
+    font-family: "Josefin Sans";
+    font-weight: bold;
+    color: #19304d;
 }
