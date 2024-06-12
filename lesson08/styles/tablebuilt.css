@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+table {
+    margin : 10px auto;
+    border : #000 solid thin;
+    border-collapse : collapse;
+}
+
+thead th:nth-child(-1n+1) {
+    background-color : #011f4b;
+    color : #fff;
+}
+
+thead th {
+    background-color : 	#6497b1;
+    color : #fff;
+}
+
+th, td {
+    padding : 7px 15px;
+}
+
+th {
+    font-size : larger;
+}
+
+td, tbody th {
+    text-align : center;
+    border : #808080 solid 1px;
+}
+
+tbody tr:nth-child(even) {
+    background-color : #b3cde0;
+}
+    
+caption {
+    caption-side : bottom;
+    padding : 10px;
+    font-size : 0.75rem;
+}
