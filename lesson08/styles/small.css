@@ -101,7 +101,7 @@ main {
 
 .wf1 input[type="submit"]{
     border: none;
-    background-image: linear-gradient(#445ba9, #6f200e);
+    background-image: linear-gradient(#445ba9, #228B22);
     color: #fff;
     border-radius: 6px;
     padding: .8rem;
@@ -116,7 +116,7 @@ main {
 }
 
 .wf1 input:required:valid {
-    border-bottom: solid 4px green;
+    border-bottom: solid 4px #228B22;
 }
 
 
