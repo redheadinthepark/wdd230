@@ -5,7 +5,7 @@
     --secondary-bg-color: #DAC0A3;
     --main-text-color: #152b51;
     --accent-color: #954f16;
-    --font-family-sans: 'Poppins', sans-serif;
+    --font-family-sans: Arial, Helvetica, sans-serif;
     --font-family-cursive: 'Sofia', cursive;
 }
 
@@ -27,6 +27,7 @@ form {
     padding: 20px;
     background-color: var(--main-bg-color);
     border-radius: 5px;
+    margin-bottom: 80px;
 }
 
 fieldset {

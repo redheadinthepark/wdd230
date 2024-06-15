@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>Leah Adair - WDD 230 - Web Frontend Development</title>
     <meta name="author" content="Leah Adair">
     <meta name="description" content="A website highlighting WDD 230 - Web Frontend Development work by Leah Adair. It will include a course assignment portal, among other things.">
@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/mobile.css">
     <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/form.css">
+
     <link rel="icon" href="favicon.ico">
     <meta property="og:title" content="Homepage - Leah Adair - WDD 230 - Web Frontend Development">
     <meta property="og:type" content="website">
@@ -58,11 +60,12 @@
                 <label for="username">Username*
                     <input type="text" id="username" name="username" required></label>
                 <label for="pass">Password*
-                    <input type="password" id="pass" name="password" required pattern="[a-zA-Z0-9]{8,}" title="Password must be at least 8 characters long and alpha-numeric."></label>
+                    <input type="password" id="pass" name="password" required pattern="[a-zA-Z0-9]{8,}" title="Must be at least 8 characters long and alpha-numeric." placeholder="Must be 8 characters and alpha-numeric"></label>
                 <label for="pass2">Re-enter Your Password*
                     <input type="password" id="pass2" name="password2" required></label>
-                <label for="email">Email*
-                    <input type="email" id="email" name="email" pattern="[a-zA-Z0-9_.\-]+@byui.edu" title="A valid byui.edu email address" required></label>
+                    <label for="email">Email*
+                        <input type="email" id="email" name="email" pattern="[a-zA-Z0-9_.\-]+@[a-zA-Z0-9\-]+\.[a-zA-Z0-9\-.]+" title="Enter a valid email address" placeholder="someone@gmail.com" required>
+                    </label>
                 <label for="range">Page Rating
                     <span id="rangevalue">0</span>
                     <input type="range" id="range" name="pageRating" min="1" max="10" value="0" step="1" list="rangevalues" oninput="updateRangeValue(this.value)" onchange="updateRangeValue(this.value)"></label>
