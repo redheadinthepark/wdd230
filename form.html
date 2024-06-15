@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leah Adair - WDD 230 - Web Frontend Development</title>
+    <meta name="author" content="Leah Adair">
+    <meta name="description" content="A website highlighting WDD 230 - Web Frontend Development work by Leah Adair. It will include a course assignment portal, among other things.">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/mobile.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="favicon.ico">
+    <meta property="og:title" content="Homepage - Leah Adair - WDD 230 - Web Frontend Development">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://redheadinthepark.github.io/wdd230/images/stansbury-park.jpeg">
+    <meta property="og:url" content="https://redheadinthepark.github.io/wdd230/">
+    <script>
+        function validateForm(event) {
+            const password = document.getElementById("pass");
+            const passwordConfirm = document.getElementById("pass2");
+
+            if (password.value !== passwordConfirm.value) {
+                event.preventDefault();
+                alert("Passwords do not match. Please try again.");
+                password.value = "";
+                passwordConfirm.value = "";
+                password.focus();
+            }
+        }
+
+        function updateRangeValue(val) {
+            document.getElementById('rangevalue').innerText = val;
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <img src="images/self-min.webp" alt="Red-haired lady in a blue top">
+        <h1>Leah Adair</h1>
+    </header>
+    <button id="menu" aria-label="Menu"></button>
+    <nav class="navigation">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="lesson03/chamber-site-plan.html">Site Plan</a></li>
+            <li><a href="chamber/">Chamber</a></li>
+            <li><a href="https://www.byui.edu/" target="_blank" class="wayfinding">BYU-Idaho</a></li>
+            <li><a href="https://www.churchofjesuschrist.org/study/scriptures" target="_blank">Scripture</a></li>
+        </ul>
+    </nav>
+    <main class="signup-page">
+        <div id="formmessage"></div>
+        <h1>Sign Up!</h1>
+        <form method="get" action="record.html" class="wf1" onsubmit="validateForm(event)">
+            <fieldset>
+                <legend>Sign Up</legend>
+                <label for="username">Username*
+                    <input type="text" id="username" name="username" required></label>
+                <label for="pass">Password*
+                    <input type="password" id="pass" name="password" required pattern="[a-zA-Z0-9]{8,}" title="Password must be at least 8 characters long and alpha-numeric."></label>
+                <label for="pass2">Re-enter Your Password*
+                    <input type="password" id="pass2" name="password2" required></label>
+                <label for="email">Email*
+                    <input type="email" id="email" name="email" pattern="[a-zA-Z0-9_.\-]+@byui.edu" title="A valid byui.edu email address" required></label>
+                <label for="range">Page Rating
+                    <span id="rangevalue">0</span>
+                    <input type="range" id="range" name="pageRating" min="1" max="10" value="0" step="1" list="rangevalues" oninput="updateRangeValue(this.value)" onchange="updateRangeValue(this.value)"></label>
+                <datalist id="rangevalues">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </datalist>
+            </fieldset>
+            <input type="submit" value="Create My Account">
+        </form>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Leah Adair United States of America</p>
+        <p id="lastModified">Last modified: <script>document.write(document.lastModified);</script></p>
+    </footer>
+
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/mainmenu.js"></script>
+    <script src="scripts/visits.js"></script>
+</body>
+</html>

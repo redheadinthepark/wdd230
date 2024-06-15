@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&family=Sofia&display=swap');
+
+:root {
+    --main-bg-color: #EADBC8;
+    --secondary-bg-color: #DAC0A3;
+    --main-text-color: #152b51;
+    --accent-color: #954f16;
+    --font-family-sans: 'Poppins', sans-serif;
+    --font-family-cursive: 'Sofia', cursive;
+}
+
+body {
+    font-family: var(--font-family-sans);
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: var(--font-family-cursive);
+    color: var(--main-text-color);
+    text-align: center;
+}
+
+form {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: var(--main-bg-color);
+    border-radius: 5px;
+}
+
+fieldset {
+    border: 1px solid var(--main-text-color);
+    border-radius: 5px;
+    padding: 20px;
+}
+
+legend {
+    font-family: var(--font-family-cursive);
+    color: var(--main-text-color);
+    padding: 0 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-family: var(--font-family-sans);
+    color: var(--main-text-color);
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="range"] {
+    width: calc(100% - 20px);
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid var(--main-text-color);
+    border-radius: 5px;
+    font-family: var(--font-family-sans);
+}
+
+input[type="submit"] {
+    background-color: var(--accent-color);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-family: var(--font-family-sans);
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+input[type="submit"]:hover {
+    background-color: var(--main-text-color);
+}
+
+#rangevalue {
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+datalist {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+}
