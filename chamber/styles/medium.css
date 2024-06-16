@@ -98,5 +98,18 @@ header img {
     transition: none;
 }
 
+.content-wrapper {
+    display: flex;
+    flex-direction: column-reverse; /* Stack the form on top */
+}
+
+.jform, .membership-descriptions {
+    width: 100%;
+    padding: 10px;
+}
+
+.jform input[type="submit"]{
+    max-width: 100%;
+
 
 }
