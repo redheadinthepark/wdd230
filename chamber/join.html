@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,7 +16,9 @@
     <meta property="og:type" content="website">
     <meta property="og:image" content="/images/sunset.webp">
     <meta property="og:url" content="https://redheadinthepark.github.io/wdd230/chamber/">
+    <link rel="stylesheet" href="styles/style.css">
 </head>
+
 <body>
     <header>
         <img src="images/mesa-chamber-logo.webp" alt="Mesa Chamber of Commerce logo">
@@ -35,48 +38,116 @@
         </ul>
     </nav>
     <main>
-        <div class="hero">
-            <picture>
-                <source srcset="images/chamber-hero-image-small.webp" media="(max-width: 400px)">
-                <source srcset="images/chamber-hero-image-medium.webp" media="(min-width: 401px) and (max-width: 800px)">
-                <source srcset="images/chamber-hero-image-large.webp" media="(min-width: 801px)">
-            <img src="images/chamber-hero-image-large.webp" alt="Arizona skyscrapers and city at golden hour.">
-            </picture>
+        <div class="join">
+            <h2>Join the Chamber!</h2>
         </div>
-        <button class="button">Join the Chamber!</button>
 
-        <!-- <div class="hero">
-            <picture>
-                <source srcset="images/week-6-image-small.webp" media="(max-width: 400px)">
-                <source srcset="images/week-6-image-medium.webp" media="(min-width: 401px) and (max-width: 800px)">
-                <source srcset="images/week-6-image-large.webp" media="(min-width: 801px)">
-            <img src="images/week-6-image-large.webp" alt="Business people in a meeting.">
-            </picture>-->
+        <div class="content-wrapper">
+        <div class="jform">
+            <div id="formmessage"></div>
+            <form method="get" action="thankyou.html" class="jform">
+                <fieldset>
+                    <legend>Membership Application</legend>
+                    <label for="fname">First Name*<input type="text" id="fname" name="fname" required></label>
+                    <label for="lname">Last Name*<input type="text" id="lname" name="lname" required></label>
+                    <label for="position">Title/Position*<input type="text" id="position" name="position"
+                            pattern="^[a-zA-Z\s\-]{7,}$" required></label>
+                    <label for="email">Email*<input type="email" id="email" name="email"
+                            placeholder="someone@gmail.com" title="Please input a valid email address." required></label>
+                    <label for="phone">Phone*<input type="tel" id="phone" name="phone" pattern="^[0-9]{10,}$"
+                            placeholder="4351234567" required></label>
+                    <label for="org">Business/Organization Name<input type="text" id="org" name="org"></label>
+                    <label for="description">Describe your Business/Organization<textarea id="description"
+                            name="description" rows="8"></textarea></label>
+                </fieldset>
+                <fieldset>
+                    <legend>Membership Level</legend>
+                    <label><input type="radio" name="membership" value="np">Nonprofit</label>
+                    <label><input type="radio" name="membership" value="gold">Gold</label>
+                    <label><input type="radio" name="membership" value="silver">Silver</label>
+                    <label><input type="radio" name="membership" value="bronze">Bronze</label>
+                </fieldset>
+                <input type="hidden" name="time" id="time">
+                <input type="submit" value="Get My Membership">
+            </form>
         </div>
-        <div class="container">
-            <div class="card current-events">
-                <h2>Current Events</h2>
-                <p>This is the content for current events.</p>
-            </div>
-            <div class="card">
-                <h2>Weather</h2>
-                <p>Current Temperature: <span id="current-temp">50°F</span></p>
-                <p>Wind Speed: <span id="wind-speed">10 mph</span></p>
-                <p>Wind Chill: <span id="wind-chill">N/A</span></p>
-            </div>
-            <div class="card">
-                <h2>Company Spotlight 1</h2>
-                <p>This is the content for Company Spotlight 1.</p>
-            </div>
-            <div class="card">
-                <h2>Company Spotlight 2</h2>
-                <p>This is the content for Company Spotlight 2.</p>
-            </div>
-            <div class="card">
-                <h2>Company Spotlight 3</h2>
-                <p>This is the content for Company Spotlight 3.</p>
-            </div>
+
+        <div class="membership-descriptions">
+            <article>
+                <h3>Nonprofit (NP) Membership</h3>
+                <h4>No Fee</h4>
+                <ul>
+                    <li>Access to monthly networking events tailored to nonprofits.</li>
+                    <li>Basic listing in the online member directory highlighting nonprofit status and mission.</li>
+                    <li>Discounts on chamber events, particularly those focused on nonprofit management and fundraising.</li>
+                    <li>Access to two free training workshops per year focusing on nonprofit management, grant writing,
+                        and community engagement.</li>
+                    <li>Access to the chamber's nonprofit resource library, including funding opportunities, volunteer
+                        management tools, and best practices guides.</li>
+                    <li>Inclusion in the chamber's volunteer matching program, connecting nonprofits with local
+                        volunteers and service organizations.</li>
+                </ul>
+            </article>
+
+            <article>
+                <h3>Bronze Membership</h3>
+                <h4>$150 Annually</h4>
+                <ul>
+                    <li>Networking Events: Access to monthly networking events, providing opportunities to connect with
+                        other local businesses and community leaders.</li>
+                    <li>Basic Directory Listing: Basic listing in the online member directory with business name and
+                        contact information.</li>
+                    <li>Event Discounts: Discounts on chamber events, including educational seminars and social
+                        gatherings.</li>
+                    <li>Resource Access: Access to the chamber's resource library, including industry reports, business
+                        templates, and regulatory updates.</li>
+                    <li>Promotional Opportunities: Opportunities to promote your business through chamber social media
+                        channels and at community events.</li>
+                </ul>
+            </article>
+
+            <article>
+                <h3>Silver Membership</h3>
+                <h4>$300 Annually</h4>
+                <ul>
+                    <li>All Bronze level benefits.</li>
+                    <li>Training Workshops: Free attendance to four training workshops per year, covering essential
+                        business skills and industry-specific knowledge.</li>
+                    <li>Webinars: Access to an expanded library of member-only webinars on topics ranging from marketing
+                        strategies to financial planning.</li>
+                    <li>Enhanced Directory Listing: Enhanced listing in the online member directory with added business
+                        information and promotional materials.</li>
+                    <li>Event Discounts: Greater discounts on chamber events, including luncheons, seminars, and
+                        community gatherings.</li>
+                    <li>Newsletter Feature: Opportunity to be featured in the chamber's monthly newsletter, reaching a
+                        wide audience of local businesses and stakeholders.</li>
+                </ul>
+            </article>
+
+            <article>
+                <h3>Gold Membership</h3>
+                <h4>$600 Annually</h4>
+                <ul>
+                    <li>All Silver level benefits.</li>
+                    <li>Exclusive Event Invitations: Invitations to VIP networking events and exclusive receptions with
+                        community leaders and business influencers.</li>
+                    <li>Advertising Benefits: Featured spotlight position on the chamber's homepage for one month and
+                        premium advertising space in the chamber's monthly newsletter.</li>
+                    <li>Priority Access: Priority registration for all events, ensuring members get the first choice on
+                        limited-seating events and programs.</li>
+                    <li>Annual Business Expo: Free booth at the annual business expo, providing direct exposure to
+                        potential clients and partners.</li>
+                    <li>Personalized Business Consultation: Two sessions per year with a business advisor for personalized
+                        strategic planning and growth advice.</li>
+                    <li>Sponsorship Opportunities: Eligibility to sponsor major events, enhancing brand visibility and
+                        community presence.</li>
+                    <li>Enhanced Online Presence: Premium listing in the online member directory, including a company
+                        logo, business description, and direct contact links.</li>
+                </ul>
+            </article>
         </div>
+        </div>
+
     </main>
 
     <footer>
@@ -94,4 +165,5 @@
     <script src="scripts/windchill.js"></script>
 
 </body>
+
 </html>
