@@ -394,21 +394,23 @@ figcaption {
     accent-color: #19304d;
 }
 
+.membership-descriptions h4 {
+    font-family: "Yeseva One";
+    color: #75434d;
+    margin-top: -10px;
+}
+
 .membership-descriptions ul,
 .membership-descriptions li {
     font-family: "Josefin Sans";
     color: #19304d;
 }
 
-.membership-descriptions h4, {
-    font-family: "Yeseva One";
-    color: #75434d;
-}
 
 .jform input[type="submit"]{
     border: none;
     color: #75434d;
-    background-image: linear-gradient(#e3e7f2, #d5d5d8);
+    background-image: linear-gradient(#fff, #f4d798);
     border: solid 1.5px #75434d;
     border-radius: 6px;
     padding: .8rem;
