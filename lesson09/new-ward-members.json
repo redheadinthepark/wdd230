@@ -1,0 +1,30 @@
+{
+    "ward_information": {
+    "family_name": "Clark",
+    "move_in_date": "2023-06-15",
+    "number_of_people": 4,
+    "visited_by_bishopric": true,
+    "family_members": [
+      {
+        "name": "Nathan Clark",
+        "gender": "Male",
+        "birthdate": "1980-04-23"
+      },
+      {
+        "name": "Laura Clark",
+        "gender": "Female",
+        "birthdate": "1982-11-12"
+      },
+      {
+        "name": "Sophia Clark",
+        "gender": "Female",
+        "birthdate": "2008-05-30"
+      },
+      {
+        "name": "Ethan Clark",
+        "gender": "Male",
+        "birthdate": "2012-09-18"
+      }
+    ]
+    }
+  }

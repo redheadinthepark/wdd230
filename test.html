@@ -3,53 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Table Example</title>
-    <style>
-        table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-        th, td {
-            border: 1px solid #ddd;
-            padding: 8px;
-        }
-        th {
-            background-color: #f2f2f2;
-            text-align: left;
-        }
-    </style>
+    <title>JSON Test</title>
 </head>
 <body>
+    <h1>Family Information</h1>
+    <pre id="json-output"></pre>
 
-<h2>Sample Table with &lt;thead&gt;, &lt;th&gt;, and &lt;td&gt;</h2>
+    <script>
+        // JSON data
+        const familyData = {
+            "family_name": "Clark",
+            "move_in_date": "2023-06-15",
+            "number_of_people": 4,
+            "visited_by_bishopric": true,
+            "family_members": [
+                {
+                    "name": "Nathan Clark",
+                    "gender": "Male",
+                    "birthdate": "1980-04-23"
+                },
+                {
+                    "name": "Laura Clark",
+                    "gender": "Female",
+                    "birthdate": "1982-11-12"
+                },
+                {
+                    "name": "Sophia Clark",
+                    "gender": "Female",
+                    "birthdate": "2008-05-30"
+                },
+                {
+                    "name": "Ethan Clark",
+                    "gender": "Male",
+                    "birthdate": "2012-09-18"
+                }
+            ]
+        };
 
-<table>
-    <thead>
-        <tr>
-            <th scope="col">Name</th>
-            <th scope="col">Age</th>
-            <th scope="col">City</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>John Doe</td>
-            <td>30</td>
-            <td>New York</td>
-        </tr>
-        <tr>
-            <td>Jane Smith</td>
-            <td>25</td>
-            <td>Los Angeles</td>
-        </tr>
-        <tr>
-            <td>Mike Johnson</td>
-            <td>35</td>
-            <td>Chicago</td>
-        </tr>
-    </tbody>
-</table>
+        // Function to display JSON data
+        function displayJSON(data) {
+            const output = document.getElementById('json-output');
+            output.textContent = JSON.stringify(data, null, 2);
+        }
 
+        // Display the JSON data in the <pre> element
+        displayJSON(familyData);
+
+        // Log the JSON data to the console
+        console.log(familyData);
+    </script>
 </body>
 </html>
-
