@@ -2,13 +2,9 @@ const baseURL = "https://redheadinthepark.github.io/wdd230/chamber/";
 const membersURL = `${baseURL}data/members.json`;
 
 async function getMembers() {
-    try {
-        const response = await fetch(membersURL);
-        const data = await response.json();
-        displayMembers(data.members);
-    } catch (error) {
-        console.error("Error fetching members data:", error);
-    }
+    const response = await fetch(membersURL);
+    const data = await response.json();
+    displayMembers(data.members);
 }
 
 function displayMembers(members) {
@@ -18,10 +14,6 @@ function displayMembers(members) {
     members.forEach(member => {
         const memberElement = document.createElement('div');
         memberElement.classList.add('member-card');
-
-        const memberImage = document.createElement('img');
-        memberImage.src = `${baseURL}images/${member.image}`;
-        memberImage.alt = member.name;
 
         const memberInfo = document.createElement('div');
         memberInfo.classList.add('member-info');
@@ -37,7 +29,7 @@ function displayMembers(members) {
 
         const memberWebsite = document.createElement('a');
         memberWebsite.href = member.website;
-        memberWebsite.textContent = "Visit Website";
+        memberWebsite.textContent = member.website; // Show the website URL
 
         const memberDescription = document.createElement('p');
         memberDescription.textContent = member.description;
@@ -48,17 +40,22 @@ function displayMembers(members) {
         memberInfo.appendChild(memberWebsite);
         memberInfo.appendChild(memberDescription);
 
-        memberElement.appendChild(memberImage);
         memberElement.appendChild(memberInfo);
 
         container.appendChild(memberElement);
     });
 }
 
-document.getElementById('toggle-view').addEventListener('click', () => {
+document.getElementById('toggle-list-view').addEventListener('click', () => {
     const container = document.getElementById('members-container');
-    container.classList.toggle('grid-view');
-    container.classList.toggle('list-view');
+    container.classList.remove('grid-view');
+    container.classList.add('list-view');
+});
+
+document.getElementById('toggle-grid-view').addEventListener('click', () => {
+    const container = document.getElementById('members-container');
+    container.classList.remove('list-view');
+    container.classList.add('grid-view');
 });
 
 getMembers();
