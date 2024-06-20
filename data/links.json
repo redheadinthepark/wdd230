@@ -1,7 +1,7 @@
 {
     "lessons": [
         {
-            "lessons": "01",
+            "lesson": "01",
             "links": [
                 {
                     "url": "lesson01/holygrail.html",
@@ -14,7 +14,7 @@
             ]
         },
         {
-            "lessons": "02",
+            "lesson": "02",
             "links": [
                 {
                     "url": "lesson02/media-query.html",
@@ -27,7 +27,7 @@
             ]
         },
         {
-            "lessons": "03",
+            "lesson": "03",
             "links": [
                 {
                     "url": "images/combinator-exercises.png",
@@ -48,7 +48,7 @@
             ]
         },
         {
-            "lessons": "04",
+            "lesson": "04",
             "links": [
                 {
                     "url": "https://codepen.io/redheadinthepark/pen/JjqdBGp",
@@ -61,7 +61,7 @@
             ]
         },
         {
-            "lessons": "05",
+            "lesson": "05",
             "links": [
                 {
                     "url": "lesson05/bom.html",
@@ -70,7 +70,7 @@
             ]
         },
         {
-            "lessons": "06",
+            "lesson": "06",
             "links": [
                 {
                     "url": "lesson2/images/landscape.webp",
@@ -83,7 +83,7 @@
             ]
         },
         {
-            "lessons": "07",
+            "lesson": "07",
             "links": [
                 {
                     "url": "lesson07/lazyload.html",
@@ -96,7 +96,7 @@
             ]
         },
         {
-            "lessons": "08",
+            "lesson": "08",
             "links": [
                 {
                     "url": "lesson08/tablebuild.html",
@@ -114,7 +114,7 @@
             ]
         },
         {
-            "lessons": "09",
+            "lesson": "09",
             "links": [
                 {
                     "url": "lesson09/new-ward-members.json",
@@ -127,10 +127,10 @@
             ]
         },
         {
-            "lessons": "10",
+            "lesson": "10",
             "links": [
                 {
-                    "url": "lesson05/bom.html",
+                    "url": "lesson10/",
                     "title": "Weather API 1"
                 },
                 {
