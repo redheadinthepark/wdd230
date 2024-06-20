@@ -141,6 +141,10 @@ li {
     margin-bottom: 8px;
 }
 
+#links-list {
+    text-align: center;
+}
+
 a {
     text-decoration: none;
     color: #152b51;
