@@ -428,3 +428,59 @@ figcaption {
 .jform input:required:valid {
     border-bottom: solid 3px #19304dbd;
 }
+
+/* Directory Page */
+
+#toggle-view {
+    padding: 10px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+#members-container {
+    display: grid;
+    gap: 20px;
+    padding: 20px;
+}
+
+.grid-view {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.list-view {
+    display: block;
+}
+
+.member-card, .member-item {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.member-card img, .member-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.member-item {
+    display: flex;
+    align-items: center;
+}
+
+.member-item img {
+    width: 50px;
+    margin-right: 20px;
+}
+
+.member-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.member-info a {
+    text-decoration: none;
+    color: #3498db;
+    margin-top: 10px;
+}
