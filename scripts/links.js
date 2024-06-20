@@ -1,5 +1,4 @@
 const baseURL = "https://redheadinthepark.github.io/wdd230/";
-
 const linksURL = `${baseURL}data/links.json`;
 
 async function getLinks() {
@@ -14,6 +13,8 @@ function displayLinks(weeks) {
 
   weeks.lessons.forEach(lesson => {
     const lessonSection = document.createElement('section');
+    lessonSection.classList.add('lesson-section'); // Add class to section
+
     const lessonTitle = document.createElement('h2');
     lessonTitle.textContent = `Lesson ${lesson.lesson}`;
     lessonSection.appendChild(lessonTitle);

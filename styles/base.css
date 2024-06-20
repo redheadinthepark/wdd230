@@ -145,6 +145,10 @@ li {
     text-align: center;
 }
 
+.lesson-section h2 {
+    margin-top: 55px;
+}
+
 a {
     text-decoration: none;
     color: #152b51;
