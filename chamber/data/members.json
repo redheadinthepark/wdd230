@@ -5,7 +5,7 @@
             "address": "123 Innovation Way, Mesa, AZ",
             "phone": "480-123-4567",
             "website": "https://www.alphasolutions.com",
-            "image": "alpha.png",
+            "image": "alpha-solutions-logo.webp",
             "membershipLevel": "Gold",
             "description": "A leading provider of innovative tech solutions."
         },
@@ -14,7 +14,7 @@
             "address": "456 Market Street, Mesa, AZ",
             "phone": "480-234-5678",
             "website": "https://www.betaenterprises.com",
-            "image": "beta.png",
+            "image": "beta-ent-logo.webp",
             "membershipLevel": "Silver",
             "description": "Your partner in business growth and development."
         },
@@ -23,7 +23,7 @@
             "address": "789 Commerce Blvd, Mesa, AZ",
             "phone": "480-345-6789",
             "website": "https://www.gammagoods.com",
-            "image": "gamma.png",
+            "image": "gamma-goods-logo.webp",
             "membershipLevel": "Bronze",
             "description": "Quality goods for all your needs."
         },
@@ -32,7 +32,7 @@
             "address": "321 Innovation Park, Mesa, AZ",
             "phone": "480-456-7890",
             "website": "https://www.deltadynamics.com",
-            "image": "delta.png",
+            "image": "delta-dyn-logo.webp",
             "membershipLevel": "Gold",
             "description": "Dynamic solutions for the modern world."
         },
@@ -41,7 +41,7 @@
             "address": "654 Business Road, Mesa, AZ",
             "phone": "480-567-8901",
             "website": "https://www.epsilonenterprises.com",
-            "image": "epsilon.png",
+            "image": "epsilon-ent-logo.webp",
             "membershipLevel": "Silver",
             "description": "Leading the way in financial services."
         },
@@ -50,7 +50,7 @@
             "address": "987 Service Ave, Mesa, AZ",
             "phone": "480-678-9012",
             "website": "https://www.zetaservices.com",
-            "image": "zeta.png",
+            "image": "zeta-logo.webp",
             "membershipLevel": "Bronze",
             "description": "Exceptional services for exceptional clients."
         },
@@ -59,7 +59,7 @@
             "address": "159 Tech Street, Mesa, AZ",
             "phone": "480-789-0123",
             "website": "https://www.etasolutions.com",
-            "image": "eta.png",
+            "image": "eta-logo.webp",
             "membershipLevel": "Gold",
             "description": "Solving tomorrow's problems today."
         }

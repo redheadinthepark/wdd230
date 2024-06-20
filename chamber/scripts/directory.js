@@ -29,7 +29,7 @@ function displayMembers(members) {
 
         const memberWebsite = document.createElement('a');
         memberWebsite.href = member.website;
-        memberWebsite.textContent = member.website; // Show the website URL
+        memberWebsite.textContent = member.website.replace(/^https?:\/\//, '');
 
         const memberDescription = document.createElement('p');
         memberDescription.textContent = member.description;
