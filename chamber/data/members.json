@@ -1,32 +1,67 @@
 {
     "members": [
         {
-            "name": "Company One",
-            "address": "123 Main St, City, Country",
-            "phone": "123-456-7890",
-            "website": "https://www.companyone.com",
-            "image": "company1.png",
+            "name": "Alpha Solutions",
+            "address": "123 Innovation Way, Mesa, AZ",
+            "phone": "480-123-4567",
+            "website": "https://www.alphasolutions.com",
+            "image": "alpha.png",
             "membershipLevel": "Gold",
-            "description": "A leading company in industry one."
+            "description": "A leading provider of innovative tech solutions."
         },
         {
-            "name": "Company Two",
-            "address": "456 Elm St, City, Country",
-            "phone": "987-654-3210",
-            "website": "https://www.companytwo.com",
-            "image": "company2.png",
+            "name": "Beta Enterprises",
+            "address": "456 Market Street, Mesa, AZ",
+            "phone": "480-234-5678",
+            "website": "https://www.betaenterprises.com",
+            "image": "beta.png",
             "membershipLevel": "Silver",
-            "description": "An innovative company in industry two."
+            "description": "Your partner in business growth and development."
         },
         {
-            "name": "Company Three",
-            "address": "789 Oak St, City, Country",
-            "phone": "555-555-5555",
-            "website": "https://www.companythree.com",
-            "image": "company3.png",
+            "name": "Gamma Goods",
+            "address": "789 Commerce Blvd, Mesa, AZ",
+            "phone": "480-345-6789",
+            "website": "https://www.gammagoods.com",
+            "image": "gamma.png",
             "membershipLevel": "Bronze",
-            "description": "A reputable company in industry three."
+            "description": "Quality goods for all your needs."
+        },
+        {
+            "name": "Delta Dynamics",
+            "address": "321 Innovation Park, Mesa, AZ",
+            "phone": "480-456-7890",
+            "website": "https://www.deltadynamics.com",
+            "image": "delta.png",
+            "membershipLevel": "Gold",
+            "description": "Dynamic solutions for the modern world."
+        },
+        {
+            "name": "Epsilon Enterprises",
+            "address": "654 Business Road, Mesa, AZ",
+            "phone": "480-567-8901",
+            "website": "https://www.epsilonenterprises.com",
+            "image": "epsilon.png",
+            "membershipLevel": "Silver",
+            "description": "Leading the way in financial services."
+        },
+        {
+            "name": "Zeta Services",
+            "address": "987 Service Ave, Mesa, AZ",
+            "phone": "480-678-9012",
+            "website": "https://www.zetaservices.com",
+            "image": "zeta.png",
+            "membershipLevel": "Bronze",
+            "description": "Exceptional services for exceptional clients."
+        },
+        {
+            "name": "Eta Solutions",
+            "address": "159 Tech Street, Mesa, AZ",
+            "phone": "480-789-0123",
+            "website": "https://www.etasolutions.com",
+            "image": "eta.png",
+            "membershipLevel": "Gold",
+            "description": "Solving tomorrow's problems today."
         }
-        // Add more companies as needed
     ]
 }

@@ -2,9 +2,13 @@ const baseURL = "https://redheadinthepark.github.io/wdd230/chamber/";
 const membersURL = `${baseURL}data/members.json`;
 
 async function getMembers() {
-    const response = await fetch(membersURL);
-    const data = await response.json();
-    displayMembers(data.members);
+    try {
+        const response = await fetch(membersURL);
+        const data = await response.json();
+        displayMembers(data.members);
+    } catch (error) {
+        console.error("Error fetching members data:", error);
+    }
 }
 
 function displayMembers(members) {
