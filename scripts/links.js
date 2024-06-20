@@ -13,7 +13,7 @@ function displayLinks(weeks) {
 
   weeks.lessons.forEach(lesson => {
     const lessonSection = document.createElement('section');
-    lessonSection.classList.add('lesson-section'); // Add class to section
+    lessonSection.classList.add('lesson-section');
 
     const lessonTitle = document.createElement('h2');
     lessonTitle.textContent = `Lesson ${lesson.lesson}`;
