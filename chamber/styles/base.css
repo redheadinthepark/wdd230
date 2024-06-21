@@ -431,10 +431,23 @@ figcaption {
 
 /* Directory Page */
 
-#toggle-view {
-    padding: 10px 20px;
-    margin-top: 20px;
+#toggle-buttons-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+#toggle-grid-view, #toggle-list-view {
     cursor: pointer;
+    border: 1px solid #19304d;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-family: "Yeseva One";
+    color: #fbf5ef;
+    background-color: #19304d;
 }
 
 #members-container {
@@ -444,56 +457,48 @@ figcaption {
 }
 
 .grid-view {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+    
+.grid-view .member-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    border: 1px solid #f1f1f1;
+    background-color: #fff;
+}
+
+.grid-view .member-card img {
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 .list-view {
-    display: block;
+    flex-direction: column;
 }
 
-.list-view .member-item {
-    border: 1px solid #ccc;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
-    background-color: #f9f9f9;
+.list-view .member-card img {
+    display: none;
 }
   
 .list-view .member-item:nth-child(odd) {
-    background-color: #f0f0f0; /* Zebra striping */
+    background-color: #f9f9f9; /* Zebra striping */
 }
 
-.member-card, .member-item {
-    border: 1px solid #ccc;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.member-card img, .member-item img {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-}
-
-.member-item {
-    display: flex;
-    align-items: center;
-}
-
-.member-item img {
-    width: 50px;
-    margin-right: 20px;
-}
-
-.member-info {
-    display: flex;
-    flex-direction: column;
+.member-info p {
+    margin-top: 5px;
 }
 
 .member-info a {
     text-decoration: none;
     color: #75434d;
-    margin-top: 10px;
+    margin-bottom: 30px;
 }
+
