@@ -132,10 +132,6 @@
                 {
                     "url": "lesson10/weather.html",
                     "title": "Weather API 1"
-                },
-                {
-                    "url": "lesson10/",
-                    "title": "Weather API 2"
                 }
             ]
         }
