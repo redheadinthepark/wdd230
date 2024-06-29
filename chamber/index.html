@@ -34,6 +34,10 @@
             <li><a href="join.html">Join</a></li>
         </ul>
     </nav>
+    <div id="banner" class="banner">
+        <p>Join us for a Chamber of Commerce meet and greet on Wednesday at 7:00 p.m.</p>
+        <button id="close-banner">❌</button>
+    </div>
     <main>
         <div class="hero">
             <picture>
@@ -43,7 +47,7 @@
             <img src="images/chamber-hero-image-large.webp" alt="Arizona skyscrapers and city at golden hour.">
             </picture>
         </div>
-        <button class="button">Join the Chamber!</button>
+        <button id="join-button" class="button">Join the Chamber!</button>
 
         <!-- <div class="hero">
             <picture>
@@ -60,13 +64,13 @@
             </div>
             <div class="card">
                 <h2>Weather</h2>
-                <p>Current Temperature: <span id="current-temp">50°F</span></p>
+                <p><b>Current Temperature:</b> <span id="current-temp">50°F</span></p>
                 <p>Current Weather: <span id="current-weather">Sunny</span></p>
                 <p>3-Day Forecast:</p>
                 <ul id="forecast">
-                    <li>Day 1: <span id="day1-temp"></span>, <span id="day1-desc"></span></li>
-                    <li>Day 2: <span id="day2-temp"></span>, <span id="day2-desc"></span></li>
-                    <li>Day 3: <span id="day3-temp"></span>, <span id="day3-desc"></span></li>
+                    <li><span id="day1-name"></span>: <span id="day1-temp"></span>, <span id="day1-desc"></span></li>
+                    <li><span id="day2-name"></span>: <span id="day2-temp"></span>, <span id="day2-desc"></span></li>
+                    <li><span id="day3-name"></span>: <span id="day3-temp"></span>, <span id="day3-desc"></span></li>
                 </ul>
             </div>
             <div class="card">
@@ -98,6 +102,9 @@
     <script src="scripts/darkmode.js"></script>
     <script src="scripts/windchill.js"></script>
     <script src="scripts/weather.js"></script>
+    <script src="scripts/banner.js"></script>
+    <script src="scripts/join-button.js"></script>
+
 
 </body>
 </html>

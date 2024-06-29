@@ -130,8 +130,8 @@ nav a::after {
     height: 1.5px;
     bottom: 10px;
     left: 0;
-    background-color: #fbf5ef; /* Underline color */
-    transform: scaleX(0); /* Initial state: hidden */
+    background-color: #fbf5ef; 
+    transform: scaleX(0); 
     transition: transform 0.3s ease;
 }
 
@@ -142,6 +142,35 @@ nav a:hover::after {
 #menu {
     display: none;
 }
+
+.banner {
+    display: none;
+    background-color: #FFD700;
+    color: #000;
+    padding: 10px;
+    text-align: center;
+    position: static;
+    width: 100%;
+}
+
+.banner p {
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+
+#close-banner {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+body.banner-active {
+    margin-top: 50px;
+}
+
 
 h1 {
     font-family: "Yeseva One";
@@ -206,6 +235,15 @@ p {
 
 .current-events {
     grid-column: span 2;
+}
+
+#current-temp, #current-weather {
+    color:#75434d;
+}
+
+#forecast {
+    font-family: "Josefin Sans";
+    color: #19304d;
 }
 
 .footer {
