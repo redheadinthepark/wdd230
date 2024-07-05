@@ -113,4 +113,8 @@ header img {
 
 }
 
+.company-spotlight {
+    grid-template-columns: 1fr;
+}
+
 }

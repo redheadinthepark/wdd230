@@ -85,9 +85,10 @@ document.addEventListener('DOMContentLoaded', function() {
                 <img src="images/${member.image}" alt="${member.name} Logo">
                 <h2>${member.name}</h2>
                 <p>${member.description}</p>
-                <p><b>Address:</b> ${member.address}</p>
-                <p><b>Phone:</b> ${member.phone}</p>
-                <p><b>Website:</b> <a href="${member.website}" target="_blank">${member.website}</a></p>
+                <p>${member.address}</p>
+                <p>${member.phone}</p>
+                <p><a href="${member.website}" target="_blank" class="website-link">${member.website.replace(/^https?:\/\//,'')}</a></p>
+                <p><b>Membership Level:</b> ${member.membershipLevel}</p>
             `;
         }
     });

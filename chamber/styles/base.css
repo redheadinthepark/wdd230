@@ -257,6 +257,43 @@ p {
     color: #19304d;
 }
 
+#spotlight {
+    display: grid;
+    gap: 20px;
+    padding: 20px;
+}
+
+.company-spotlight {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.company-spotlight .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: 1px solid #19304d;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 255, 0.1);
+}
+
+.company-spotlight .card img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.website-link {
+    text-decoration: none;
+    font-family: "Josefin Sans";
+    color: #75434d;
+    margin-bottom: 30px;
+}
+
 .footer {
     background-color: #19304d;
     text-align: center;
@@ -569,6 +606,7 @@ figcaption {
 
 .member-info a {
     text-decoration: none;
+    font-family: "Josefin Sans";
     color: #75434d;
     margin-bottom: 30px;
 }
