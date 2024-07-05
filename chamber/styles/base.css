@@ -187,6 +187,11 @@ h3 {
     color: #19304d;
 }
 
+h4 {
+    font-family: "Josefin Sans";
+    color: #75434d;
+}
+
 p {
     font-family: "Josefin Sans";
     color: #19304d;
@@ -288,6 +293,29 @@ nav.dark-mode {
 .card.dark-mode {
     background-color: #333;
     border-color: #fbf5ef;
+}
+
+body.dark-mode figcaption {
+    color: #fbf5ef;
+}
+
+body.dark-mode .grid-view .member-card {
+    background-color: #333;
+    border-color: #fbf5ef;
+    color: #fbf5ef;
+}
+
+body.dark-mode .membership-descriptions,
+body.dark-mode .membership-descriptions h3,
+body.dark-mode .membership-descriptions h4,
+body.dark-mode .membership-descriptions li {
+    color: #fbf5ef;
+}
+
+body.dark-mode fieldset,
+body.dark-mode fieldset legend,
+body.dark-mode fieldset label {
+    color: #fbf5ef;
 }
 
 .footer.dark-mode {
@@ -511,11 +539,10 @@ figcaption {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: 1px solid #19304d;
     border-radius: 10px;
-    border: 1px solid #f1f1f1;
-    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 255, 0.1);   
 }
 
 .grid-view .member-card img {
