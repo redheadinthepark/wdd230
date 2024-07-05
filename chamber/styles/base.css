@@ -196,11 +196,17 @@ p {
     position: relative;
     width: 100%;
     overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.hero picture {
+    width: 100%;
+    display: block;
 }
 
 .hero img {
     width: 100%;
-    height: auto;
     display: block;
 }
 
