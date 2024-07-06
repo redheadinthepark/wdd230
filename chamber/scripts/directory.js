@@ -25,6 +25,8 @@ function displayMembers(members) {
         const memberImage = document.createElement('img');
         memberImage.src = `${baseURL}images/${member.image}`;
         memberImage.alt = `${member.name} logo`;
+        memberImage.width = 200;
+        memberImage.height = 100;
 
         const memberInfo = document.createElement('div');
         memberInfo.classList.add('member-info');
@@ -46,8 +48,7 @@ function displayMembers(members) {
 
         const memberWebsite = document.createElement('a');
         memberWebsite.href = member.website;
-        memberWebsite.textContent = member.website.replace('https://', ''); 
-
+        memberWebsite.textContent = member.website.replace('https://', '');
 
         memberInfo.appendChild(memberName);
         memberInfo.appendChild(memberAddress);
@@ -55,7 +56,6 @@ function displayMembers(members) {
         memberInfo.appendChild(memberDescription);
         memberInfo.appendChild(memberLevel);
         memberInfo.appendChild(memberWebsite);
-
 
         memberElement.appendChild(memberImage);
         memberElement.appendChild(memberInfo);

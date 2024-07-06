@@ -139,7 +139,6 @@ nav a:hover::after {
     transform: scaleX(1);
 }
 
-
 #menu {
     display: none;
 }
@@ -517,7 +516,6 @@ figcaption {
     color: #19304d;
 }
 
-
 .jform input[type="submit"]{
     border: none;
     color: #75434d;
@@ -592,16 +590,12 @@ figcaption {
 
 .list-view {
     flex-direction: column;
-    text-align: center;
+        text-align: center;
 
 }
 
 .list-view .member-card img {
     display: none;
-}
-  
-.list-view .member-item:nth-child(odd) {
-    background-color: #f9f9f9; /* Zebra striping */
 }
 
 .member-info p {

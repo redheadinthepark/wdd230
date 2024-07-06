@@ -100,7 +100,7 @@ header img {
 
 .content-wrapper {
     display: flex;
-    flex-direction: column-reverse; /* Stack the form on top */
+    flex-direction: column-reverse;
 }
 
 .jform, .membership-descriptions {
