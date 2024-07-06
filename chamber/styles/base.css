@@ -172,7 +172,6 @@ body.banner-active {
     margin-top: 50px;
 }
 
-
 h1 {
     font-family: "Yeseva One";
     color: #cc8d80;
@@ -425,7 +424,7 @@ figcaption {
 .visit-message {
     font-family: "Josefin Sans";
     font-weight: bold;
-    color: #19304d;
+    color: #75434d;
 }
 
 /* Join/Thanks Pages */
