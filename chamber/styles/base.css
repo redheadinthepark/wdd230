@@ -180,6 +180,8 @@ h1 {
 h2 {
     font-family: "Yeseva One";
     color: #75434d;
+    text-align: center;
+    margin-top: 40px;
 }
 
 h3 {
