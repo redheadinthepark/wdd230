@@ -592,6 +592,8 @@ figcaption {
 
 .list-view {
     flex-direction: column;
+    text-align: center;
+
 }
 
 .list-view .member-card img {
@@ -604,6 +606,7 @@ figcaption {
 
 .member-info p {
     margin-top: 5px;
+    text-align: center;
 }
 
 .member-info a {
