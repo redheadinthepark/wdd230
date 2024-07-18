@@ -36,9 +36,65 @@
             </div>
         </div>
     </header>
-    <main>
+<main>
         <h1>Rental Options</h1>
-    </main>
+        <section class="card-section">
+            <div class="card">
+                <img src="https://picsum.photos/200" alt="Scooter">
+                <h2>Scooter</h2>
+                <p>Max Persons: 2</p>
+                <a href="reservations.html" class="reserve-link">Reserve</a>
+            </div>
+            <div class="card">
+                <img src="https://picsum.photos/200" alt="ATV">
+                <h2>ATV</h2>
+                <p>Max Persons: 1</p>
+                <a href="reservations.html" class="reserve-link">Reserve</a>
+            </div>
+            <div class="card">
+                <img src="https://picsum.photos/200" alt="Jeep">
+                <h2>Jeep</h2>
+                <p>Max Persons: 4</p>
+                <a href="reservations.html" class="reserve-link">Reserve</a>
+            </div>
+            <div class="card">
+                <img src="https://picsum.photos/200" alt="Buggy">
+                <h2>Buggy</h2>
+                <p>Max Persons: 2</p>
+                <a href="reservations.html" class="reserve-link">Reserve</a>
+            </div>
+            <div class="card">
+                <img src="https://picsum.photos/200" alt="Dune Buggy">
+                <h2>Dune Buggy</h2>
+                <p>Max Persons: 2</p>
+                <a href="reservations.html" class="reserve-link">Reserve</a>
+            </div>
+            <div class="card">
+                <img src="https://picsum.photos/200" alt="Golf Cart">
+                <h2>Golf Cart</h2>
+                <p>Max Persons: 4</p>
+                <a href="reservations.html" class="reserve-link">Reserve</a>
+            </div>
+        </section>
+        <section class="pricing-section">
+            <h2>Pricing Information</h2>
+            <table id="pricing-table">
+                <thead>
+                    <tr>
+                        <th>Type</th>
+                        <th>Number of Riders</th>
+                        <th>Reservation Half Day</th>
+                        <th>Reservation Full Day</th>
+                        <th>Walk-In Half Day</th>
+                        <th>Walk-In Full Day</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Pricing data will be populated here -->
+                </tbody>
+            </table>
+        </section>
+    </main>    
     <footer>
         <div class="footer-content">
             <div class="footer-logo">
@@ -60,6 +116,7 @@
     </footer>
 
     <script src="scripts/wayfinding.js"></script>
+    <script src="scripts/fetch-pricing.js"></script>
 
 </body>
 </html>

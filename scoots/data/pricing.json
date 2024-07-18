@@ -1,0 +1,50 @@
+[
+    {
+        "type": "Scooter",
+        "number_of_riders": 2,
+        "reservation_half_day": 30,
+        "reservation_full_day": 50,
+        "walkin_half_day": 35,
+        "walkin_full_day": 55
+    },
+    {
+        "type": "ATV",
+        "number_of_riders": 1,
+        "reservation_half_day": 45,
+        "reservation_full_day": 80,
+        "walkin_half_day": 50,
+        "walkin_full_day": 90
+    },
+    {
+        "type": "Jeep",
+        "number_of_riders": 4,
+        "reservation_half_day": 60,
+        "reservation_full_day": 110,
+        "walkin_half_day": 70,
+        "walkin_full_day": 120
+    },
+    {
+        "type": "Buggy",
+        "number_of_riders": 2,
+        "reservation_half_day": 40,
+        "reservation_full_day": 70,
+        "walkin_half_day": 45,
+        "walkin_full_day": 80
+    },
+    {
+        "type": "Convertible",
+        "number_of_riders": 4,
+        "reservation_half_day": 70,
+        "reservation_full_day": 130,
+        "walkin_half_day": 80,
+        "walkin_full_day": 140
+    },
+    {
+        "type": "Electric Scooter",
+        "number_of_riders": 1,
+        "reservation_half_day": 25,
+        "reservation_full_day": 45,
+        "walkin_half_day": 30,
+        "walkin_full_day": 50
+    }
+]
