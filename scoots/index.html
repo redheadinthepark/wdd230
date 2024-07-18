@@ -19,34 +19,47 @@
 <body>
     <header>
         <div class="hero-image">
+            <img src="https://redheadinthepark.github.io/wdd230/scoots/images/hero-image-beach.webp" alt="Cozumel beach and rock formation." class="hero-img">
             <div class="overlay">
                 <div class="header-content">
-                    <img src="logo.png" alt="Logo" class="logo">
+                    <a href="index.html"><img src="images/logo.png" alt="Logo" class="logo"></a>
                     <nav>
                         <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">Rentals</a></li>
-                            <li><a href="#">Reservations</a></li>
-                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="rentals.html">Rentals</a></li>
+                            <li><a href="reservations.html">Reservations</a></li>
+                            <li><a href="contact-us.html">Contact Us</a></li>
                         </ul>
                     </nav>
-                    <a href="#" class="book-now">Book Now</a>
+                    <button class="book-now" onclick="window.location.href='reservations.html'">BOOK NOW</button>
                 </div>
             </div>
         </div>
     </header>
     <main>
-        <h1>Rent With Us!</h1>
-
+        <h1>Why Rent With Us?</h1>
     </main>
     <footer>
         <div class="footer-content">
-            <a href="https://www.facebook.com" target="_blank"><img src="facebook-icon.png" alt="Facebook"></a>
-            <a href="https://www.twitter.com" target="_blank"><img src="twitter-icon.png" alt="Twitter"></a>
-            <a href="https://www.instagram.com" target="_blank"><img src="instagram-icon.png" alt="Instagram"></a>
+            <div class="footer-logo">
+                <a href="index.html"><img src="images/logo.png" alt="Logo" class="logo"></a>
+            </div>
+            <div class="social-links">
+                <a href="https://www.facebook.com" target="_blank"><img src="images/facebook-logo.png" alt="Facebook"></a>
+                <a href="https://www.twitter.com" target="_blank"><img src="images/x-logo.png" alt="X"></a>
+                <a href="https://www.instagram.com" target="_blank"><img src="images/instagram-icon.png" alt="Instagram"></a>
+            </div>
+            <div class="footer-info">
+                <p>Leah Adair</p>
+                <p>Project for WWD 230 | BYU-Idaho</p>
+                <p>Contact us: info@scoots.com</p>
+                <p>+52 987 123 4567</p>
+                <p><a href="attributions.html"><b>Attributions</b></a></p>
+            </div>
         </div>
-
     </footer>
+
+    <script src="scripts/wayfinding.js"></script>
 
 </body>
 </html>
