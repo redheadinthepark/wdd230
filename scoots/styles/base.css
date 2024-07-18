@@ -78,7 +78,7 @@ nav ul li a:hover {
 
 .nav-link.active,
 .nav-link:hover {
-    color: #115673;
+    color: #D6A737;
     text-decoration: wavy underline;
     text-underline-offset: 10px;
 }
