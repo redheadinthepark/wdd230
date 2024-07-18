@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 const row = document.createElement('tr');
                 row.innerHTML = `
                     <td>${item.type}</td>
-                    <td>${item.riders}</td>
+                    <td>${item.max_persons}</td>
                     <td>${item.reservation_half_day}</td>
                     <td>${item.reservation_full_day}</td>
                     <td>${item.walkin_half_day}</td>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Scoots scooter and Jeep rentals website | Home</title>
+    <title>Scoots scooter and Jeep rentals website | Reservations</title>
     <meta name="author" content="Leah Adair">
     <meta name="description" content="Scoots offers top-quality scooter, ATV, and Jeep rentals in Cozumel, Mexico. Explore the island with our reliable and affordable rental vehicles for an unforgettable adventure." />
     <link rel="stylesheet" href="styles/normalize.css">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="styles/larger.css">
     <link rel="stylesheet" href="styles/mobile.css">
     <link rel="icon" href="images/scoots-favicon.ico">
-    <meta property="og:title" content="Homepage | Scoots of Cozumel, Mexico">
+    <meta property="og:title" content="Reservations | Scoots of Cozumel, Mexico">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://redheadinthepark.github.io/wdd230/scoots/images/hero-image-beach.webp">
     <meta property="og:url" content="https://redheadinthepark.github.io/wdd230/scoots">
@@ -38,7 +38,76 @@
     </header>
     <main>
         <h1>Reservations</h1>
-    </main>
+        <section class="rental-agreement">
+            <h2>Rental Agreement</h2>
+            <ol>
+                <li>A $50 security deposit is required to confirm reservations.</li>
+                <li>A valid driver's license is required in hand at the time of rental.</li>
+                <li>No one under the age of 12 years of age are allowed to ride on the scooters.</li>
+                <li>Fuel charge is not included.</li>
+                <li>Unlimited mileage.</li>
+                <li>Liability insurance is included.</li>
+                <li>Damage insurance is available for purchase.</li>
+                <li>Free delivery to Cozumel hotels or Airbnbs for 2+ day rentals.</li>
+                <li>Payment via Google Pay, Apple Pay, cash, credit card, debit card, or Venmo.</li>
+                <li>Rentals may be returned to either physical location.</li>
+            </ol>
+        </section>
+        <br>
+        <h2>Reservation Form</h2>
+        <section class="reservation-form">
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Reservation Form</legend>
+                    <label for="name" class="required">Full Name:
+                        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                    </label>
+                    <label for="email" class="required">Email Address:
+                        <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+                    </label>
+                    <label for="phone" class="required">Phone Number:
+                        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+                    </label>
+                    <label for="country" class="required">Country:
+                        <select id="country" name="country" required>
+                            <option value="">Select your country</option>
+                            <option value="USA">USA</option>
+                            <option value="Mexico">Mexico</option>
+                            <!-- Add more countries as needed -->
+                        </select>
+                    </label>
+                    <label for="cruise-line">Cruise Line (if any):
+                        <input type="text" id="cruise-line" name="cruise-line" placeholder="Enter your cruise line">
+                    </label>
+                    <label for="rental-date" class="required">Rental Date:
+                        <input type="date" id="rental-date" name="rental-date" required>
+                    </label>
+                    <label for="time-period" class="required">Time Period:
+                        <select id="time-period" name="time-period" required>
+                            <option value="half-day">Half Day</option>
+                            <option value="full-day">Full Day</option>
+                        </select>
+                    </label>
+                    <label for="rental-type" class="required">Rental Type:
+                        <select id="rental-type" name="rental-type" required>
+                            <option value="honda-metro">Honda Metro</option>
+                            <option value="honda-dio">Honda Dio</option>
+                            <option value="honda-pcx150">Honda PCX150</option>
+                            <option value="honda-pioneer">Honda Pioneer</option>
+                            <option value="jeep-4door">Jeep 4 door</option>
+                            <option value="jeep-2door">Jeep 2 door</option>
+                        </select>
+                    </label>
+                    <label for="how-many" class="required">How Many:
+                        <input type="number" id="how-many" name="how-many" min="1" max="10" required>
+                    </label>
+                    <label for="special-accommodations">Special Accommodations:
+                        <textarea id="special-accommodations" name="special-accommodations" rows="4" placeholder="Enter any additional information or special requests."></textarea>
+                    </label>
+                </fieldset>
+                <input type="submit" value="BOOK MY ADVENTURE!">
+            </form>
+        </section>    </main>
     <footer>
         <div class="footer-content">
             <div class="footer-logo">
