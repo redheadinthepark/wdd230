@@ -72,7 +72,7 @@ nav ul li a {
 
 nav ul li a:hover {
     color: #D6A737;
-    text-decoration: #115673 wavy underline;
+    text-decoration: wavy underline;
     text-underline-offset: 10px;
 }
 
