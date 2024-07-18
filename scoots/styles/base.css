@@ -102,6 +102,10 @@ nav ul li a:hover {
     color: #D6A737;
 }
 
+h1 {
+    margin: 20px;
+}
+
 footer {
     background-color: #EDC0B2;
     color: #115673;
