@@ -17,6 +17,10 @@
     <meta property="og:url" content="https://redheadinthepark.github.io/wdd230/scoots">
 </head>
 <body>
+    <div id="weather-banner" class="weather-banner">
+        <span id="banner-text">Today's high temperature: <span id="temp-max"></span>&deg;C</span>
+        <button id="close-banner" class="close-banner">×</button>
+    </div>
     <header>
         <div class="hero-image">
             <img src="https://redheadinthepark.github.io/wdd230/scoots/images/hero-image-beach.webp" alt="Cozumel beach and rock formation." class="hero-img">
@@ -38,6 +42,25 @@
     </header>
     <main>
         <h1>Why Rent With Us?</h1>
+        <section class="content-section">
+            <img src="https://picsum.photos/200" alt="Scooter" class="content-image">
+            <div class="content-text">
+                <h2>Explore Cozumel with our scooters</h2>
+                <p>Our scooters are perfect for navigating the beautiful island of Cozumel. Enjoy the freedom to explore at your own pace.</p>
+            </div>
+        </section>
+        <section class="content-section">
+            <img src="https://picsum.photos/200" alt="Jeep" class="content-image">
+            <div class="content-text">
+                <h2>Discover the island in a Jeep</h2>
+                <p>Rent a Jeep for an adventurous journey through Cozumel's diverse landscapes. Perfect for families and groups.</p>
+            </div>
+        </section>        <section class="weather-section">
+            <h2>Current Weather in Cozumel</h2>
+            <div id="weather-widget">
+                <!-- Weather widget content will go here -->
+            </div>
+        </section>
     </main>
     <footer>
         <div class="footer-content">
@@ -60,6 +83,8 @@
     </footer>
 
     <script src="scripts/wayfinding.js"></script>
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/banner.js"></script>
 
 </body>
 </html>

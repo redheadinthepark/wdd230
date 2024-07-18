@@ -10,6 +10,28 @@ h1, h2, h3, h4, h5, h6 {
     color: #115673;
 }
 
+.weather-banner {
+    background-color: #D6A737;
+    color: #115673;
+    font-size: 24px;
+    text-align: center;
+    padding: 10px 20px;
+    position: relative;
+    z-index: 1000;
+}
+
+.close-banner {
+    background: none;
+    border: none;
+    color: #EDE4DB;
+    font-size: 20px;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
 header {
     position: relative;
     width: 100%;
@@ -103,7 +125,35 @@ nav ul li a:hover {
 }
 
 h1 {
-    margin: 20px;
+    margin: 40px;
+    text-align: center;
+}
+
+.content-section {
+    display: flex;
+    align-items: center;
+    padding: 40px;
+}
+
+.content-image {
+    width: 300px;
+    height: auto;
+    border-radius: 20px;
+    margin-right: 20px;
+}
+
+.content-text {
+    flex: 1;
+    padding: 20px;
+}
+
+.weather-section {
+    padding: 20px;
+    text-align: center;
+}
+
+.weather-section #weather-widget {
+    margin-top: 20px;
 }
 
 footer {
