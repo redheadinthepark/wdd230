@@ -18,7 +18,7 @@ main {
 }
 
 .weather-banner {
-    background-color: #EDC0B2;
+    background-color: #F1D9D1;
     color: #115673;
     font-size: 24px;
     text-align: center;
@@ -96,7 +96,7 @@ header {
     color: #EDE4DB;
     text-decoration: none;
     font-size: 32pt;
-    margin: 0 30px;
+    margin: 0 0px;
 }
 
 .navigation ul li a:hover {
@@ -393,7 +393,7 @@ h1 {
 }
 
 footer {
-    background-color: #EDC0B2;
+    background-color: #F1D9D1;
     color: #115673;
     padding: 20px 0;
     font-size: 14pt;

@@ -2,9 +2,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const weatherBanner = document.getElementById('weather-banner');
     const closeBannerButton = document.getElementById('close-banner');
     const tempMaxSpan = document.getElementById('temp-max');
+    const apiKey = 'be0a5249ffe06607b565d0f2bc96df80';
 
     // Fetch weather data
-    fetch('https://api.openweathermap.org/data/2.5/forecast?q=Cozumel&appid=YOUR_API_KEY&units=metric')
+    fetch(`https://api.openweathermap.org/data/2.5/forecast?q=Cozumel&appid=${apiKey}&units=metric`)
         .then(response => response.json())
         .then(data => {
             const today = new Date().getDate();
