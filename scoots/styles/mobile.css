@@ -1,5 +1,142 @@
 @media screen and (max-width: 480px) {
+    body {
+        margin: 0;
+        padding: 0;
+    }
 
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
 
-    
+    .hero-image {
+        max-height: 50vh;
+    }
+
+    .header-content {
+        padding: 10px;
+    }
+
+    .logo {
+        max-width: 100px;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    nav ul li a {
+        font-size: 18pt;
+    }
+
+    .book-now {
+        font-size: 16pt;
+        padding: 10px 15px;
+    }
+
+    h1 {
+        font-size: 24pt;
+        margin: 20px;
+    }
+
+    .content-section {
+        flex-direction: column;
+        padding: 20px 10px;
+    }
+
+    .content-image {
+        width: 100%;
+        margin: 0 0 20px 0;
+    }
+
+    .content-text {
+        padding: 10px;
+    }
+
+    .weather-section {
+        padding: 10px;
+    }
+
+    .card-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        max-width: 100%;
+        margin: 10px 0;
+    }
+
+    .pricing-section {
+        padding: 20px;
+    }
+
+    #pricing-table th, #pricing-table td {
+        padding: 5px;
+    }
+
+    .reservation-form {
+        padding: 10px;
+    }
+
+    .reservation-form fieldset {
+        padding: 10px;
+    }
+
+    .contact-section {
+        flex-direction: column;
+    }
+
+    .contact-info, .contact-form {
+        max-width: 100%;
+        margin: 0 0 20px 0;
+    }
+
+    .contact-form h2 {
+        font-size: 18pt;
+    }
+
+    .contact-form label {
+        font-size: 14pt;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 14pt;
+    }
+
+    .contact-form button {
+        font-size: 14pt;
+    }
+
+    footer {
+        text-align: center;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-logo {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .social-links {
+        margin-bottom: 10px;
+    }
+
+    .footer-info {
+        text-align: center;
+    }
 }
