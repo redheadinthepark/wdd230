@@ -23,18 +23,23 @@
     </div>
     <header>
         <div class="hero-image">
+            <picture>
+                <source srcset="images/hero-image-beach-small.webp" media="(max-width: 400px)"> 
+                <source srcset="images/hero-image-beach-medium.webp" media="(min-width: 401px) and (max-width: 800px)">
+                <source srcset="images/hero-image-beach.webp" media="(min-width: 801px)">           
             <img src="https://redheadinthepark.github.io/wdd230/scoots/images/hero-image-beach.webp" alt="Cozumel beach and rock formation." class="hero-img">
+            </picture>
             <div class="overlay">
                 <div class="header-content">
                     <a href="index.html"><img src="images/logo.png" alt="Logo" class="logo"></a>
-                    <nav>
-                        <ul>
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="rentals.html" class="nav-link">Rentals</a></li>
-                            <li><a href="reservations.html" class="nav-link">Reservations</a></li>
-                            <li><a href="contact-us.html" class="nav-link">Contact Us</a></li>
-                        </ul>
-                    </nav>
+                        <nav>
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="rentals.html" class="nav-link">Rentals</a></li>
+                                <li><a href="reservations.html" class="nav-link">Reservations</a></li>
+                                <li><a href="contact-us.html" class="nav-link">Contact Us</a></li>
+                            </ul>
+                        </nav>
                     <button class="book-now" onclick="window.location.href='reservations.html'">BOOK NOW</button>
                 </div>
             </div>
@@ -43,14 +48,14 @@
     <main>
         <h1>Why Rent With Us?</h1>
         <section class="content-section">
-            <img src="images/coastal-drive.webp" alt="Coastal drive" class="content-image">
+            <img src="images/coastal-drive.webp" alt="Coastal drive" class="content-image" loading="lazy">
             <div class="content-text">
                 <h2>Explore Cozumel on our scooters</h2>
                 <p>Our owner-operated company caters to locals, walk-in tourists, motor scooter enthusiasts, cruise-based touring groups and partnerships, and YOU. We would love to shower you with the care that our team gives to each and every client.</p>
             </div>
         </section>
         <section class="content-section">
-            <img src="images/punta-sur-eco-park.webp" alt="Park with lighthouse." class="content-image">
+            <img src="images/punta-sur-eco-park.webp" alt="Park with lighthouse." class="content-image" loading="lazy">
             <div class="content-text">
                 <h2>Discover the island in a Jeep</h2>
                 <p>Perfect for families and groups, our Jeeps are rated 5 star! Our friendly staff will make renting easy-breezy, so you can focus on fun and adventure. We invite you to explore the vast coasts and inlets on our beautiful southern and eastern shores.</p>
@@ -68,9 +73,9 @@
                 <a href="index.html"><img src="images/logo.png" alt="Logo" class="logo"></a>
             </div>
             <div class="social-links">
-                <a href="https://www.facebook.com" target="_blank"><img src="images/facebook-logo.png" alt="Facebook"></a>
-                <a href="https://www.twitter.com" target="_blank"><img src="images/x-logo.png" alt="X"></a>
-                <a href="https://www.instagram.com" target="_blank"><img src="images/instagram-icon.png" alt="Instagram"></a>
+                <a href="https://www.facebook.com" target="_blank"><img src="images/facebook-logo.png" alt="Facebook" loading="lazy"></a>
+                <a href="https://www.twitter.com" target="_blank"><img src="images/x-logo.png" alt="X" loading="lazy"></a>
+                <a href="https://www.instagram.com" target="_blank"><img src="images/instagram-icon.png" alt="Instagram" loading="lazy"></a>
             </div>
             <div class="footer-info">
                 <p>Leah Adair</p>
