@@ -1,7 +1,124 @@
+/* Styles for larger screens */
 @media screen and (min-width: 640px) {
-    #map {
-        height: 250px;
+    body {
+        font-size: 16px;
     }
 
+    .weather-banner {
+        font-size: 20px;
+        padding: 15px 30px;
+    }
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
 
+    .hero-image {
+        max-height: 70vh;
+    }
+
+    .header-content {
+        padding: 20px;
+    }
+
+    .logo {
+        max-width: 200px;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: center;
+        padding: 0;
+    }
+
+    nav ul li {
+        margin: 0 20px;
+    }
+
+    nav ul li a {
+        font-size: 24pt;
+    }
+
+    .book-now {
+        font-size: 20pt;
+        padding: 15px 30px;
+        margin: 20px 0;
+    }
+
+    h1 {
+        font-size: 40pt;
+        margin: 40px;
+    }
+
+    .content-section {
+        flex-direction: row;
+        padding: 40px 20px;
+    }
+
+    .content-image {
+        width: 40%;
+    }
+
+    .content-text {
+        flex: 1;
+        padding: 20px 40px;
+    }
+
+    .weather-section {
+        padding: 20px 40px;
+    }
+
+    .card-section {
+        justify-content: space-around;
+    }
+
+    .card {
+        max-width: 45%;
+        margin: 20px;
+    }
+
+    .pricing-section {
+        padding: 40px;
+    }
+
+    #pricing-table th, #pricing-table td {
+        padding: 15px;
+    }
+
+    .reservation-form {
+        padding: 40px;
+    }
+
+    .reservation-form fieldset {
+        padding: 20px;
+        margin: 20px 40px;
+    }
+
+    .contact-section {
+        padding: 40px;
+    }
+
+    .contact-info, .contact-form {
+        max-width: 45%;
+        margin: 0 20px;
+    }
+
+    footer {
+        padding: 40px;
+    }
+
+    .footer-content {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .footer-logo {
+        margin-bottom: 0;
+    }
+
+    .footer-info {
+        margin-bottom: 0;
+    }
 }
