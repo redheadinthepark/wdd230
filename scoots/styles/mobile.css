@@ -118,13 +118,16 @@
     }
 
     .pricing-section {
-        padding: 20px;
+        padding: 10px;
     }
-
+    
+    #pricing-table {
+        font-size: 12px; /* Reduce font size for mobile */
+    }
+    
     #pricing-table th, #pricing-table td {
-        padding: 5px;
+        padding: 6px;
     }
-
     .reservation-form {
         padding: 20px;
     }

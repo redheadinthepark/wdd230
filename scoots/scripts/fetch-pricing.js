@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
-    fetch('pricing.json')
-        .then(response => response.json())
+    fetch('data/pricing.json')
+    .then(response => response.json())
         .then(pricingData => {
             const tableBody = document.querySelector('#pricing-table tbody');
 

@@ -5,8 +5,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const apiKey = 'be0a5249ffe06607b565d0f2bc96df80';
 
     // Fetch weather data
-    fetch(`https://api.openweathermap.org/data/2.5/forecast?q=Cozumel&appid=${apiKey}&units=metric`)
-        .then(response => response.json())
+fetch(`https://api.openweathermap.org/data/2.5/forecast?q=Cozumel&appid=${apiKey}&units=metric`)
+    .then(response => response.json())
         .then(data => {
             const today = new Date().getDate();
             const todayData = data.list.filter(entry => new Date(entry.dt_txt).getDate() === today);

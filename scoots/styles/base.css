@@ -31,14 +31,12 @@ main {
     background: none;
     border: none;
     color: #115673;
-    font-size: 20px;
+    font-size: 24px;
     position: absolute;
-    right: 10px;
-    top: 50%;
-    transform: translateY(-50%);
+    right: 20px;
+    top: 10px;
     cursor: pointer;
 }
-
 header {
     position: relative;
     width: 100%;
@@ -219,19 +217,26 @@ h1 {
 }
 
 .pricing-section {
-    padding: 40px;
+    padding: 20px;
+}
+
+#pricing-table-container {
+    overflow-x: auto; /* Enables horizontal scrolling if needed */
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS devices */
 }
 
 #pricing-table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 20px;
+    min-width: 600px; /* Ensures table content fits */
 }
 
 #pricing-table th, #pricing-table td {
     border: 1px solid #ddd;
-    padding: 10px;
+    padding: 8px;
     text-align: center;
+    font-size: 14px; /* Adjust font size for mobile */
 }
 
 #pricing-table th {
@@ -250,7 +255,6 @@ h1 {
 #pricing-table tr:hover {
     background-color: #ddd;
 }
-
 .rental-agreement ol {
     list-style-type: disc;
     margin-left: 20px; 
