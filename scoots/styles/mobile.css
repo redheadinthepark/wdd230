@@ -90,6 +90,7 @@
 
     .content-section {
         flex-direction: column;
+        min-width: 0;
         padding: 20px 10px;
     }
 
