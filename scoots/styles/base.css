@@ -162,6 +162,8 @@ h1 {
 .weather-section {
     padding: 20px;
     text-align: center;
+    margin-bottom: 40px;
+
 }
 
 .weather-section #weather-widget {
@@ -221,22 +223,23 @@ h1 {
 }
 
 #pricing-table-container {
-    overflow-x: auto; /* Enables horizontal scrolling if needed */
-    -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS devices */
+    overflow-x: auto; 
+    -webkit-overflow-scrolling: touch; 
+    margin-bottom: 40px;
 }
 
 #pricing-table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 20px;
-    min-width: 600px; /* Ensures table content fits */
+    min-width: 600px; 
 }
 
 #pricing-table th, #pricing-table td {
     border: 1px solid #ddd;
     padding: 8px;
     text-align: center;
-    font-size: 14px; /* Adjust font size for mobile */
+    font-size: 14px; 
 }
 
 #pricing-table th {
@@ -345,6 +348,7 @@ h1 {
     background-color: #f9f9f9;
     border: 1px solid #ddd;
     border-radius: 20px;
+    margin-bottom: 20px;
 }
 
 .contact-info, .contact-form {
@@ -394,6 +398,30 @@ h1 {
 
 .contact-form button:hover {
     background-color: #D6A737;
+}
+
+.map-section {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+#map {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; 
+    height: 0;
+    overflow: hidden;
+    border-radius: 20px;
+    margin-bottom: 40px;
+}
+
+#map iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 footer {
