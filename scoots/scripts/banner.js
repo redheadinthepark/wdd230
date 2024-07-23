@@ -3,10 +3,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const closeBannerButton = document.getElementById('close-banner');
     const tempMaxSpan = document.getElementById('temp-max');
     const apiKey = 'be0a5249ffe06607b565d0f2bc96df80';
+    const lat = 20.5083;
+    const lon = -86.9458;
 
     // Fetch weather data
-fetch(`https://api.openweathermap.org/data/2.5/forecast?q=Cozumel&appid=${apiKey}&units=metric`)
-    .then(response => response.json())
+    fetch(`https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${apiKey}&units=metric`)    
+        .then(response => response.json())
         .then(data => {
             const today = new Date().getDate();
             const todayData = data.list.filter(entry => new Date(entry.dt_txt).getDate() === today);

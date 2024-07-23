@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     // Get all navigation links within the .navigation class
-    const navLinks = document.querySelectorAll('nav.navigation ul li a');
+    const navLinks = document.querySelectorAll('nav.navigation ul li a.navigation-link');
 
     // Get the current URL path
     const currentPath = window.location.pathname.split('/').pop() || 'index.html';
